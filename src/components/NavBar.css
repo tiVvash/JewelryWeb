@@ -1,0 +1,21 @@
+.NavBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    margin: 0 10px;
+}
+
+.Logo img {
+max-height: 50px;
+}
