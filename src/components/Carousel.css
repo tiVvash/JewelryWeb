@@ -1,0 +1,46 @@
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carouselImage {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s linear, opacity 0.3s liner;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  .arrow {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    color: #228291;
+    border: none;
+    z-index: 10;
+  }
+  
+  .arrowLeft {
+    left: 0;
+  }
+  
+  .arrowRight {
+    right: 0;
+  }
+  

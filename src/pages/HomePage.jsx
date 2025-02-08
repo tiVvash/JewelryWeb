@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import PopularProducts from "../components/PopularProducts";
+import ProductsHome from "../components/ProductsHome";
 
 
 export default function HomePage() {
@@ -7,6 +8,7 @@ export default function HomePage() {
         <>
             <Hero />
             <PopularProducts />
+            <ProductsHome/>
         </>
     )
 }

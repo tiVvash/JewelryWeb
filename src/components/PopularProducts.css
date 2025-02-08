@@ -1,3 +1,14 @@
 .PopularProducts{
     text-align: center;
+    width: 100%;
+    margin: 5% 0;
+}
+
+.Carousel{
+    display: flex;
+    align-items: center;
+}
+
+.Carousel img{
+    max-width: fit-content;
 }
