@@ -1,5 +1,54 @@
-.ProductsHome{
+.ProductHome {
+    margin: 1%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75);
     border-radius: 30px;
     background-color: #E0C289;
-    height: 100px;
+}
+
+.ProductName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+
+}
+
+.NameButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+
+}
+
+.NameButton button {
+    background-color: #FFFAF1;
+    color: black;
+
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+button>img {
+    transition: transform 0.25s ease;
+}
+
+button:hover>img {
+    transform: translateX(4px);
+}
+
+.ProductImage {
+    width: 50%;
+}
+
+.ProductImage img {
+    width: 100%;
+    height: 70vh;
+    border-radius: 150px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
