@@ -6,6 +6,7 @@ import Img3 from '../assets/Img3.jpg'
 import Img7 from '../assets/Img7.jpg'
 import Img6 from '../assets/Img6.jpg'
 import ArrowRight from '../assets/icon/navigation/ArrowRight.png'
+import { Link } from 'react-router-dom'; 
 
 export default function ProductsHome() {
 
@@ -21,15 +22,20 @@ export default function ProductsHome() {
         <div className="ProductHome">
             <div className="container ProductName">
                 <div className="NameButton">
+
                     {Object.entries(images).map(([key, img]) => (
-                        <button
+                        <Link
                             key={key}
-                            onMouseEnter={() => setCurrentImage(img)}
-                            // onMouseLeave={() => setCurrentImage(images.All)}
+                            to={`/products?category=${key.toLowerCase()}`} 
+                            style={{ textDecoration: 'none' }}
                         >
-                            {key.charAt(0).toUpperCase() + key.slice(1)}
-                            <img src={ArrowRight}alt="" />
-                        </button>
+                            <button
+                                onMouseEnter={() => setCurrentImage(img)} 
+                            >
+                                {key.charAt(0).toUpperCase() + key.slice(1)} 
+                                <img src={ArrowRight} alt="" />
+                            </button>
+                        </Link>
                     ))}
                 </div>
 
