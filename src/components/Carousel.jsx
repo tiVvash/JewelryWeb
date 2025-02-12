@@ -6,6 +6,8 @@ import Img5 from '../assets/Img5.jpg'
 import './Carousel.css'
 import { useState } from "react";
 import { motion } from "framer-motion";
+import ArrowRight from '../assets/icon/navigation/ArrowRight.png'
+import ArrowLeft from '../assets/icon/navigation/ArrowLeft.png'
 
 
 const images = [Img1, Img2, Img3, Img4, Img5];
@@ -27,7 +29,7 @@ export default function Carousel() {
   };
   return (
     <div className="carouselContainer">
-      <button className="arrow arrowLeft" onClick={handlePrev}>‹</button>
+      <button className="arrow arrowLeft" onClick={handlePrev}><img src={ArrowLeft} alt="" /></button>
       <div className="carousel">
         {images.map((src, index) => {
           const position = getPosition(index);
@@ -49,7 +51,7 @@ export default function Carousel() {
           );
         })}
       </div>
-      <button className="arrow arrowRight" onClick={handleNext}>›</button>
+      <button className="arrow arrowRight" onClick={handleNext}><img src={ArrowRight} alt="" /></button>
     </div>
   );
 }

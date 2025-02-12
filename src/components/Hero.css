@@ -2,7 +2,7 @@
     margin: 1%;
     box-shadow: 10px 10px 20px  rgba(0,0,0,0.75);
     border-radius: 30px;
-    height: 96vh;
+    height: 85vh;
 }
 
 .heroDisplay{
@@ -29,6 +29,6 @@
 
 .ColRight img{
     max-width: 100%;
-    max-height: 83vh;
+    max-height: 81vh;
 }
 

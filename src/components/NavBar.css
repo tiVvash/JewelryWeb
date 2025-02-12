@@ -1,3 +1,8 @@
+.NavBarContainer{
+    margin: 1%;
+    box-shadow: 10px 5px 20px  rgba(0,0,0,0.75);
+    border-radius: 30px;
+}
 .NavBar{
     display: flex;
     align-items: center;
@@ -10,12 +15,17 @@
     list-style: none;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .menu li{
     margin: 0 10px;
 }
 
+.Logo{
+    display: flex;
+    justify-content: center;
+}
 .LogoImg {
-max-height: 50px;
+max-height: 45px;
 }

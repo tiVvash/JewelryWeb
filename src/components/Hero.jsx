@@ -1,4 +1,4 @@
-import NavBar from "./NavBar";
+
 import './Hero.css'
 import HeroImg from '../assets/HeroImg.png'
 
@@ -6,7 +6,6 @@ export default function Hero() {
     return (
         <div className="HeroContainer">
             <div className="container heroDisplay">
-                <NavBar />
                 <div className="Hero">
                     <div className="colLeft">
                         <h1>Timeless Pieces <br/> for Every Occasion</h1>

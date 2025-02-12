@@ -1,3 +1,20 @@
-.product img{
-    height: 200px;
+.ProductSearch{
+    margin: 1%;
+    padding: 2% 0;
+    box-shadow: 10px 10px 20px  rgba(0,0,0,0.75);
+    border-radius: 30px;
+}
+
+.categoryButtons{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.categoryButtons button{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 10px  rgba(0,0,0,0.75);
+
 }
