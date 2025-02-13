@@ -12,30 +12,30 @@ export default function Footer() {
                         <p>Whether you're celebrating a special event or adding a touch of luxury to your everyday look, our jewelry is designed to elevate your style and make every occasion unforgettable</p>
                     </div>
                     <div className="colRight">
-                        <div className="ProductsList">
+                        <ul className="ProductsList">
                             <h3>Products</h3>
                             <Link to="/products?category=all">
-                                <p>All Products</p>
+                                <li>All Products</li>
                             </Link>
                             <Link to="/products?category=rings">
-                                <p>Rings</p>
+                                <li>Rings</li>
                             </Link>
                             <Link to="/products?category=earrings">
-                                <p>Earrings</p>
+                                <li>Earrings</li>
                             </Link>
                             <Link to="/products?category=necklaces">
-                                <p>Necklaces</p>
+                                <li>Necklaces</li>
                             </Link>
                             <Link to="/products?category=bracelets">
-                                <p>Bracelets</p>
+                                <li>Bracelets</li>
                             </Link>
-                        </div>
-                        <div className="Contact">
+                        </ul>
+                        <ul className="Contact">
                             <h3>Contact Us</h3>
-                            <p>info@Jevelry.com</p>
-                            <p>1-800-200-300</p>
-                            <p>3500 deer creek Rd Palo Alto, CA</p>
-                        </div>
+                            <li>info@Jevelry.com</li>
+                            <li>1-800-200-300</li>
+                            <li>3500 deer creek Rd Palo Alto, CA</li>
+                        </ul>
 
                     </div>
                 </div>

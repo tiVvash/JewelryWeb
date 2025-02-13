@@ -5,16 +5,17 @@
     border-radius: 30px;
 }
 
-.categoryButtons{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.categoryButtons button{
+.dropDown{
     background-color: white;
     color: black;
+    width: 20vw;
+    padding: 1%;
     box-shadow: 2px 2px 10px  rgba(0,0,0,0.75);
+    border-radius: 30px;
+}
 
+.dropDown:focus-visible{
+    background-color: white;
+    color: black;
+    outline: none;
 }
