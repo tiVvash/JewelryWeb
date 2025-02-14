@@ -1,5 +1,5 @@
 import './ProductDisplay.css'
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import ImgRing from '../assets/ImgRing.jpg'
 import ImgEarring from '../assets/ImgEarring.jpg'
 import Img3 from '../assets/Img3.jpg'
@@ -34,15 +34,17 @@ const ProductDisplay = () => {
 
 
     <div className='container'>
-        <h2>Products - {category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-        <div className="productList">
-          {filteredProducts.map(product => (
-            <div key={product.id} className="product">
+      <h2>Products - {category.charAt(0).toUpperCase() + category.slice(1)}</h2>
+      <div className="productList">
+        {filteredProducts.map(product => (
+          <div key={product.id} className="product">
+            <Link to={`/products/${product.id}` }>
               <img src={(product.img)} alt="" />
-            </div>
-          ))}
-        </div>
+            </Link>
+          </div>
+        ))}
       </div>
+    </div>
   );
 };
 

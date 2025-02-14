@@ -3,6 +3,7 @@ import './App.css'
 import HomePage from './pages/HomePage';
 import Products from './pages/Products'
 import ScrollTop from './components/ScrollTop';
+import ItemDescription from './pages/ItemDescription';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<Products />} />  
+        <Route path="/products/:id" element={<ItemDescription/>}/>
       </Routes>
     </Router>
   )
