@@ -19,3 +19,15 @@
     color: black;
     outline: none;
 }
+
+@media only screen and (max-width:768px){
+    .dropDown{
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .dropDown{
+        width: 100%;
+    }
+}

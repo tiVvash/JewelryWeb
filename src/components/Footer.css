@@ -29,3 +29,27 @@ footer li:hover{
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 768px){
+    .twoColumn{
+        flex-direction: column;
+    }
+    .colLeft{
+        text-align: center;
+        width: 100%;
+    }
+
+    .colRight ul{
+        padding: 0;
+    }
+    .colRight{
+        width: 100%;
+    }
+    .ProductList{
+        width: 50%;
+
+    }
+    .Contact{
+        width: 50%;
+    }
+}

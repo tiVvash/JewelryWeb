@@ -2,7 +2,7 @@
     margin: 1%;
     box-shadow: 10px 10px 20px  rgba(0,0,0,0.75);
     border-radius: 30px;
-    height: 85vh;
+    height: 90vh;
 }
 
 .heroDisplay{
@@ -17,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    flex-wrap: wrap;
 }
 
 .ColRight{
@@ -32,3 +33,38 @@
     max-height: 81vh;
 }
 
+/* tablet size */
+
+@media only screen and (max-width: 768px){
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+
+ .Hero{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+ }
+
+ .ColRight{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .colLeft{
+    width: 100%;
+
+ }
+
+ .ColRight img{
+    max-width: 100%;
+}
+
+}

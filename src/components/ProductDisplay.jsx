@@ -38,10 +38,11 @@ const ProductDisplay = () => {
       <div className="productList">
         {filteredProducts.map(product => (
           <div key={product.id} className="product">
-            <Link to={`/products/${product.id}` }>
+            <Link to={`/products/${product.id}` } >
               <img src={(product.img)} alt="" />
-            </Link>
-          </div>
+              </Link>
+            </div>
+
         ))}
       </div>
     </div>

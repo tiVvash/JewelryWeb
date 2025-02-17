@@ -26,3 +26,25 @@ border-radius: 30px;
 .description h1{
     margin: 0;
 }
+
+@media only screen and (max-width: 768px){
+    .descriptionContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .description{
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .descriptionContainer img{
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .description button{
+        width: 100%;
+    }
+}
